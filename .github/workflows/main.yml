@@ -20,7 +20,7 @@ jobs:
 
       # Publish the site
       - name: Publish
-        run: dotnet publish Satanhp.csproj -p:GHPages=true -c:Release -o:publish
+        run: dotnet publish Satanhp/Satanhp/Satanhp.csproj -p:GHPages=true -c:Release -o:publish
 
       # Deploy the site
       - name: Deploy
