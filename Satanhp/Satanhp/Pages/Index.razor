@@ -6,22 +6,22 @@
     <Carousel Autoplay="TimeSpan.FromSeconds(6)">
         <CarouselSlick>
             <div>
-                <img width="100%" height="400" src="https://pbs.twimg.com/media/Fd0u-thaAAEu_Bp?format=jpg&name=large"><img />
+                <img style=" width:100%; height:400px;" src="https://pbs.twimg.com/media/Fd0u-thaAAEu_Bp?format=jpg&name=large"><img />
             </div>
         </CarouselSlick>
         <CarouselSlick>
             <div>
-                <img width="100%" height="400" src="https://pbs.twimg.com/media/Fd8_uR9aMAEUpWu?format=jpg&name=large"><img />
+                <img style=" width:100%; height:400px;" src="https://pbs.twimg.com/media/Fd8_uR9aMAEUpWu?format=jpg&name=large"><img />
             </div>
         </CarouselSlick>
         <CarouselSlick>
             <div>
-                <img width="100%" height="400" src="https://pbs.twimg.com/media/Fcu3y4QacAEbM9Y?format=jpg&name=large"><img />
+                <img style=" width:100%; height:400px;" src="https://pbs.twimg.com/media/Fcu3y4QacAEbM9Y?format=jpg&name=large"><img />
             </div>
         </CarouselSlick>
         <CarouselSlick>
             <div>
-                <img width="100%" height="400" src="https://pbs.twimg.com/media/FckjL93agAML0un?format=jpg&name=large"><img />
+                <img style=" width:100%; height:400px;" src="https://pbs.twimg.com/media/FckjL93agAML0un?format=jpg&name=large" onload="@(() => State())"><img />
             </div>
         </CarouselSlick>
     </Carousel>
@@ -36,3 +36,10 @@
         </a>
     </div>
 </div>
+
+@code{
+
+    private void State(){
+        StateHasChanged();
+    }
+}
