@@ -1,45 +1,49 @@
 ﻿@page "/"
+@using System.ComponentModel
 
 <PageTitle>強杉 サタン</PageTitle>
 
 <div style="text-align:center;">
     <Carousel Autoplay="TimeSpan.FromSeconds(6)">
         <CarouselSlick>
-            <div>
-                <img style=" width:100%; height:400px;" src="https://pbs.twimg.com/media/Fd0u-thaAAEu_Bp?format=jpg&name=large"><img />
-            </div>
+            <h3>
+                <Image id="imageSize" Src="https://pbs.twimg.com/media/Fd0u-thaAAEu_Bp?format=jpg&name=large"></Image>
+            </h3>
         </CarouselSlick>
         <CarouselSlick>
-            <div>
-                <img style=" width:100%; height:400px;" src="https://pbs.twimg.com/media/Fd8_uR9aMAEUpWu?format=jpg&name=large"><img />
-            </div>
+            <h3>
+                <Image id="imageSize" Src="https://pbs.twimg.com/media/Fd8_uR9aMAEUpWu?format=jpg&name=large"></Image>
+            </h3>
         </CarouselSlick>
         <CarouselSlick>
-            <div>
-                <img style=" width:100%; height:400px;" src="https://pbs.twimg.com/media/Fcu3y4QacAEbM9Y?format=jpg&name=large"><img />
-            </div>
+            <h3>
+                <Image id="imageSize" Src="https://pbs.twimg.com/media/Fcu3y4QacAEbM9Y?format=jpg&name=large"></Image>
+            </h3>
         </CarouselSlick>
         <CarouselSlick>
-            <div>
-                <img style=" width:100%; height:400px;" src="https://pbs.twimg.com/media/FckjL93agAML0un?format=jpg&name=large" onload="@(() => State())"><img />
-            </div>
+            <h3>
+                <Image id="imageSize" Src="https://pbs.twimg.com/media/FckjL93agAML0un?format=jpg&name=large"></Image>
+            </h3>
         </CarouselSlick>
     </Carousel>
 </div>
 <div style="padding: 34px;">
     <div style="text-align:center;">
         <Divider Style="font-family: 'Shippori Antique', sans-serif;">お知らせ</Divider>
-        <a href="https://twitter.com/satan_tsuyosugi/status/1576379917583134721">
-            <Alert Type="@AlertType.Success"
-                   Message="バナイベのフォームが出来ましたのでご記入お願いします✏️🌟"
-                   ShowIcon="true" />
-        </a>
+        <p><a id="underline" href="https://twitter.com/satan_tsuyosugi/status/1576379917583134721">バナイベのフォームが出来ましたのでご記入お願いします</a></p>
+        <Divider Style="font-family: 'Shippori Antique', sans-serif;">Twitter</Divider>
+        <a class="twitter-timeline" href="https://twitter.com/satan_tsuyosugi?ref_src=twsrc%5Etfw"></a> <script suppress-error="BL9992" async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 </div>
 
-@code{
-
-    private void State(){
-        StateHasChanged();
+        <style>
+    #underline {
+        border-bottom: solid 5px #87CEFA;
     }
-}
+
+    #imageSize {
+        max-width: 426px;
+        max-height: 240px;
+        text-align:center;
+    }
+        </style>

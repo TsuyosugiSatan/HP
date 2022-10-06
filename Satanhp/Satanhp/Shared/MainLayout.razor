@@ -1,35 +1,19 @@
 ﻿@inherits LayoutComponentBase
 
 <Layout>
-    <Header Class="site-layout-sub-header-background" Style="padding: 10; color:white">LOGO</Header>
+    <Header Class="site-layout-sub-header-background" Style="padding: 10; color:white; text-align:center;">
+        <Space>
+            <SpaceItem>
+                <div style="text-align: center">LOGO</div>
+            </SpaceItem>
+        </Space>
+        </Header>
     <Layout>
-        <Sider Breakpoint="@BreakpointType.Lg"
-               CollapsedWidth="0">
-            <div class="logo" />
-            <Menu Theme="MenuTheme.Dark" Mode="MenuMode.Inline" DefaultSelectedKeys=@(new[]{"4"})>
-                <MenuItem Key="1">
-                    <Icon Type="user" Theme="outline" />
-                    <span class="nav-text">nav 1</span>
-                </MenuItem>
-                <MenuItem Key="2">
-                    <Icon Type="video-camera" Theme="outline" />
-                    <span class="nav-text">nav 2</span>
-                </MenuItem>
-                <MenuItem Key="3">
-                    <Icon Type="upload" Theme="outline" />
-                    <span class="nav-text">nav 3</span>
-                </MenuItem>
-                <MenuItem Key="4">
-                    <Icon Type="user" Theme="outline" />
-                    <span class="nav-text">nav 4</span>
-                </MenuItem>
-            </Menu>
-        </Sider>
         <Content>
-            <div class="site-layout-background" style="padding: 0; min-height: 360px">
+            <div class="site-layout-background" style="padding: 0;">
                 @Body
             </div>
         </Content>
     </Layout>
-    <Footer Style="text-align: center;">©2022  Anonymous Listener</Footer>
+    <Footer Style="text-align: center;">©2022 Anonymous Listener</Footer>
 </Layout>
