@@ -36,7 +36,6 @@
             <li class="book_item fifth"></li>
             <li class="book_item sixth"></li>
         </ul>
-        <div class="shelf"></div>
     </div>
     <div id="app"></div>
     <div id="blazor-error-ui">
@@ -63,6 +62,12 @@
         top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .loaded {
+        display: none;
+        opacity: 0;
+        z-index: -1;
     }
 
     .books_list {
@@ -208,33 +213,6 @@
 
         .book_item:nth-child(6) {
             animation-delay: 2083.3333333333ms;
-        }
-
-    .shelf {
-        width: 300px;
-        height: 5px;
-        margin: 0 auto;
-        background-color: white;
-        position: relative;
-    }
-
-        .shelf:before, .shelf:after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: #1e6cc7;
-            background-image: radial-gradient(rgba(255, 255, 255, 0.5) 30%, transparent 0);
-            background-size: 10px 10px;
-            background-position: 0 -2.5px;
-            top: 200%;
-            left: 5%;
-            animation: move 250ms linear infinite;
-        }
-
-        .shelf:after {
-            top: 400%;
-            left: 7.5%;
         }
 
     @keyframes move {
