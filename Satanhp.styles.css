@@ -1,0 +1,97 @@
+/* /Pages/Index.razor.rz.scp.css */
+#underline[b-wgii8eoix5] {
+    border-bottom: solid 5px #87CEFA;
+}
+
+.dokidoki[b-wgii8eoix5] {
+    animation: dokidoki-b-wgii8eoix5 1.5s infinite;
+}
+
+@keyframes dokidoki-b-wgii8eoix5 {
+    0% {
+        transform: scale(1.05)
+    }
+
+    5% {
+        transform: scale(1)
+    }
+
+    95% {
+        transform: scale(1)
+    }
+
+    100% {
+        -webkit-transform: scale(1.05)
+    }
+}
+
+.button-simple[b-wgii8eoix5] {
+    position: relative;
+    font-weight: bold;
+    padding: 5px 15px;
+    margin: 0px 5px;
+    border-radius: 30px; /*角の丸み*/
+    font-size: 18px; /*文字サイズ*/
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    color: #fff; /*文字色*/
+    display: inline-block;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0, 0.3);
+    box-shadow: 0 3px 0 rgb(0, 0, 0, 0.3);
+}
+
+    .button-simple[b-wgii8eoix5]:before {
+        font-family: FontAwesome;
+        content: '';
+        display: inline-block;
+        border-radius: 50%;
+        width: 40px; /*画像の幅*/
+        height: 40px; /*画像の高さ*/
+        background-image: url(https://static.wixstatic.com/media/ec1187_405b9364beab4897916da7b463f1f0ca~mv2.png/v1/fill/w_100,h_100,al_c,q_85,usm_0.33_1.00_0.00,enc_auto/IRIAM_ios_app_icon.png);
+        background-size: contain;
+        vertical-align: middle;
+        color: #eeee22; /*アイコンの色*/
+        margin-right: 3px;
+    }
+
+a:hover .button-simple[b-wgii8eoix5] {
+    background-color: #cc0000; /*触れたときの背景色*/
+    color: #fff; /*触れたときの文字色*/
+    box-shadow: 0 0px 0 rgb(0, 0, 0, 0.3);
+    animation-play-state: paused;
+    top: 3px;
+}
+/* /Shared/MainLayout.razor.rz.scp.css */
+#components-layout-demo-responsive .logo[b-8llcd36eq1] {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+}
+
+.site-layout-sub-header-background[b-8llcd36eq1] {
+    background: #fff;
+}
+
+.site-layout-background[b-8llcd36eq1] {
+    background-color: #486d46; /* �w�i�F */
+    background-image: url("Picture/wallpaper.jpg"); /* �摜 */
+    background-size: cover; /* �S��� */
+    background-attachment: fixed; /* �Œ� */
+    background-position: center center; /* �c������ */
+}
+
+#headerColor[b-8llcd36eq1] {
+    position: fixed; /* �w�b�_�[���Œ肷�� */
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    height:100%;
+    width:100%;
+    max-height:60px;
+    z-index:9999;
+}
+
+.inner[b-8llcd36eq1] {
+    margin: 0 auto;
+    padding-top:30%;
+    padding-right: 10px;
+}
