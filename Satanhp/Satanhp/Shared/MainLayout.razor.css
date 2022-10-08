@@ -17,8 +17,13 @@
 }
 
 #headerColor {
+    position: fixed; /* ƒwƒbƒ_[‚ğŒÅ’è‚·‚é */
     background-color: #8EC5FC;
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    height:100%;
+    width:100%;
+    max-height:60px;
+    z-index:9999;
 }
 
 .inner {
