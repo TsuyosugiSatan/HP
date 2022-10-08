@@ -9,5 +9,20 @@
 }
 
 .site-layout-background {
-    background: #fff;
+    background-color: #486d46; /* ”wŒiF */
+    background-image: url("wallpaper.jpg"); /* ‰æ‘œ */
+    background-size: cover; /* ‘S‰æ–Ê */
+    background-attachment: fixed; /* ŒÅ’è */
+    background-position: center center; /* c‰¡’†‰› */
+}
+
+#headerColor {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.inner {
+    margin: 0 auto;
+    padding-top:30%;
+    padding-right: 20px;
 }
